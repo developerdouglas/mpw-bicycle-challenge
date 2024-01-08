@@ -1,0 +1,25 @@
+body {
+    background-color: #808080;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 125%;
+
+}
+
+.page-title {
+    text-align: center;
+}
+
+.content__container {
+    background-color: #cecece;
+    margin: 0 auto;
+    padding: 20px;
+    width: 960px;
+}
+
+.success {
+    color: #116711;
+}
+
+.error {
+    color: #9d1515;
+}

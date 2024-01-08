@@ -1,0 +1,7 @@
+{% extends 'layout/main.html.twig' %}
+
+{% block content %}
+    {% for statement in output %}
+        <p class="{{ statement.status }}">{{ statement.message }}</p>
+    {% endfor %}
+{% endblock %}
