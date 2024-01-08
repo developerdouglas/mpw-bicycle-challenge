@@ -15,7 +15,7 @@ Vehicles can be run, but they will fail to run if they're locked or don't have a
 
 - In your terminal, navigate to the project directory
 - Run `docker-compose up -d --build`
-- After Docker container is fully up, go to http://localhost:8080 in your browser
+- After the Docker container is fully up and `composer install` has finished (about 100 seconds), go to http://localhost:8080 in your browser
 
 Relevant Classes are in /app/src/Classes.  
 Classes are instantiated in /app/src/Controller/MainController.php

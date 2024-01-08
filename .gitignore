@@ -2,14 +2,3 @@ logs
 .idea
 cache.properties
 bin/*
-
-# Symfony
-#
-###> symfony/framework-bundle ###
-.env.local
-.env.local.php
-.env.*.local
-.env
-vendor
-var
-###< symfony/framework-bundle ###
