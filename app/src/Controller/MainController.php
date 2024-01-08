@@ -24,7 +24,7 @@ class MainController extends AbstractController
         $jerry = new VehicleOwner('Jerry');
         $tommy = new VehicleOwner('Tommy');
 
-        // Here's a car. Can it run?
+        // Here's a bicycle. Can it run?
         $output[] = $this->outputInfo('Here\'s a bicycle. Can it run?');
         $bike->run();
         $output[] = $bike->getVehicleStatus();
@@ -39,17 +39,16 @@ class MainController extends AbstractController
         $output[] = $this->outputInfo('Amanda locks up their bike so it doesn\'t walk off.');
         $amanda->getVehicle()?->setIsLocked(true);
 
-        // Jerry Owns the Car
+        // Jerry owns the Car
         $jerry->setVehicle($car);
         $jerry->getVehicle()?->run();
         $output[] = $jerry->getVehicle()?->getVehicleStatus();
 
-        // Tommy Owns the Bicycle
+        // Tommy owns the Tricycle
         $tommy->setVehicle($trike);
         $tommy->getVehicle()?->run();
         $output[] = $tommy->getVehicle()?->getVehicleStatus();
 
-        // Amanda should lock up the car
         $output[] = $this->outputInfo('Tommy attempts to lock up their tricycle.');
         $tommy->getVehicle()?->setIsLocked(true);
         $output[] = $tommy->getVehicle()?->getVehicleStatus();
